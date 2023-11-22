@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  background: url("../assets/bg.jpg") no-repeat;
+  min-height: 100dvh;
+  min-width: 100dvh;
+  background-size: 100dvw 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#board {
+  background: linear-gradient(rgb(210, 237, 210), rgb(228, 228, 176));
+  width: 90vmin;
+  height: 90vmin;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(18, 1fr);
+}
+
+#score {
+  position: absolute;
+  top: 9px;
+  right: 200px;
+  font-size: 39px;
+}
+
+.head {
+  background: linear-gradient(red, yellow);
+  border: 0.25vmin solid purple;
+  transform: scale(1.02);
+  border-radius: 8px;
+}
+
+.snake {
+  background-color: purple;
+  border: 0.25vmin solid white;
+  border-radius: 8px;
+}
+
+.food {
+  background: linear-gradient(red, purple);
+  border: 0.25vmin solid black;
+  border-radius: 8px;
+}
